@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page </title>
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+
+<div id="bg"></div>
+
+<form>
+  <div class="form-field">
+    <input type="text"  id="email" placeholder="Username" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password"  id="password" placeholder="Password" required/>                         </div>
+  
+  <div class="form-field">
+    <button class="btn" type="reset"  onclick="validate()"
+    >Log in</button>
+  </div>
+</form>
+
+<script>
+  function validate() {
+    var email=document.getElementById("email").value;
+    var password =document.getElementById("password").value;
+    if (email != 0 && password !=0)  {
+      window.location.assign("http://localhost/portal/index.php")
+    }
+    else{
+      alert('Please fill the email and Password');
+    }
+
+  }
+</script>
+
+
+</body>
+</html>
